@@ -1,0 +1,1 @@
+example speckle automate function with a jupyter notebook
