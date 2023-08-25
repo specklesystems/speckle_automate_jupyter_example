@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "speckle-automate-jupyter-example"
+version = "0.1.0"
+description = ""
+authors = ["Gergő Jedlicska <gergo@jedlicska.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "speckle_automate_jupyter_example"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+specklepy = "^2.16.0"
+stringcase = "^1.2.0"
+pydantic = "^2.3.0"
+notebook = "^7.0.2"
+papermill = "^2.4.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+mypy = "^1.5.1"
+ruff = "^0.0.285"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
