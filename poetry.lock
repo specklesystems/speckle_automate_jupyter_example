@@ -2330,23 +2330,21 @@ name = "specklepy"
 version = "2.17.0"
 description = "The Python SDK for Speckle 2.0"
 optional = false
-python-versions = ">=3.8.0, <4.0"
-files = []
-develop = true
+python-versions = ">=3.8.0,<4.0"
+files = [
+    {file = "specklepy-2.17.0-py3-none-any.whl", hash = "sha256:90c18812666dd3beeabe6b784f57de26227f7651d949c7cabe041e533b895581"},
+    {file = "specklepy-2.17.0.tar.gz", hash = "sha256:6c6044351beb6e68e81d296189966efdc470096febfa588e965949567ffaac1a"},
+]
 
 [package.dependencies]
-appdirs = "^1.4.4"
-attrs = "^23.1.0"
-Deprecated = "^1.2.13"
-gql = {version = "^3.3.0", extras = ["requests", "websockets"]}
-httpx = "^0.25.0"
-pydantic = "^2.0"
-stringcase = "^1.2.0"
-ujson = "^5.3.0"
-
-[package.source]
-type = "directory"
-url = "../specklepy"
+appdirs = ">=1.4.4,<2.0.0"
+attrs = ">=23.1.0,<24.0.0"
+Deprecated = ">=1.2.13,<2.0.0"
+gql = {version = ">=3.3.0,<4.0.0", extras = ["requests", "websockets"]}
+httpx = ">=0.25.0,<0.26.0"
+pydantic = ">=2.0,<3.0"
+stringcase = ">=1.2.0,<2.0.0"
+ujson = ">=5.3.0,<6.0.0"
 
 [[package]]
 name = "stack-data"
@@ -2911,4 +2909,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "d7fd02066a15a03fffaff8d7f330f9bb22d81cd36c261181ce241946c9c0a3fa"
+content-hash = "2e99dfaeba8136073a91fd4a2e3fc23c6a731e80842221f8adbe28fde7805c1a"
