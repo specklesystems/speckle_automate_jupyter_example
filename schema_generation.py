@@ -1,5 +1,5 @@
 """
-This module is used to create the JSON schema from the FunctionInputs class defined in the notebook.
+This module extracts the JSON schema from the FunctionInputs class the notebook.
 
 WARNING: you probably should not be modifying this unless you know what you are doing.
 """
@@ -25,7 +25,10 @@ def save_schema_to_file(file_path: str):
 
     # should have only found 1
     if len(function_inputs_cells) != 1:
-        msg = f"Expected 1 cell to have the tag `function_inputs`, found {len(function_inputs_cells)}"
+        msg = (
+            "Expected 1 cell to have the tag `function_inputs`,"
+            f" found {len(function_inputs_cells)}"
+        )
         raise ValueError(msg)
 
     # parse and dump the schema to make sure its a valid json object
