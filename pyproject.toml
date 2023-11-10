@@ -2,7 +2,7 @@
 name = "speckle-automate-jupyter-example"
 version = "0.1.0"
 description = ""
-authors = ["Gergő Jedlicska <gergo@jedlicska.com>"]
+authors = ["Speckle Systems <hello@speckle.systems>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "speckle_automate_jupyter_example"}]
